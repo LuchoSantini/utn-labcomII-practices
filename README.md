@@ -1,2 +1,2 @@
 # utn-labcomII-practices
-Practicas LC II
+Prácticas LC II
