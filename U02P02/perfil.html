@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi perfil</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
 </head>
-<body>
-    <h1 align = "center" style = "font-family: Arial, Helvetica, sans-serif;">
-        Mi perfil
-    </h1>
-    <form>
-        <input
-        value="ESTUDIANTE" 
-        type="text"
-        size="8"
-        readonly
-        disabled
-        >
 
-        <br/>
-        <hr/>
+<body style="background-color: rgb(236, 236, 236);">
+    
+    <h1 align="center" style="font-family: Arial, Helvetica, sans-serif;">Mi perfil</h1>
 
-        <label for="nombreEst">Nombre del estudiante</label>
-        <input
-        type="text"
-        id="nombreEst"
-        name="nombreEst"
-        >
+    <div align="center">
+        <form>
+            <div style="background-color: rgb(219, 219, 219);">
+            <input value="ESTUDIANTE" type="text" size="8" readonly disabled>
+            <hr>
+            <label for="nombreEst">Nombre y Apellido:</label>
+            <input type="text" id="nombreEst" name="nombreEst" size="15">
 
-        <br/>
+            <label for="email">E-Mail:</label>
+            <input type="text" id="email" name="email" size="20">
 
-        <label for="email">E-Mail</label>
-        <input
-        type="text"
-        id="email"
-        name="email"
-        >
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" size="5">
 
-        <label for="edad">Edad</label>
-        <input
-        type="text"
-        id="edad"
-        name="edad"
-        >
-    </form>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <label for="condLaboral">Condición laboral:</label>
+            <select name="condLaboral" id="condLaboral">
+                <option value="Desempleado">Desempleado</option>
+                <option value="En búsqueda laboral">En búsqueda laboral</option>
+                <option value="Trabajo part time">Trabajo part time</option>
+                <option value="Trabajo full time">Trabajo full time</option>
+            </select>
+            <div>
+                <h2>Gustos Personales</h2>
+                <label for="gustosMusic">Gustos musicales</label>
+                <input type="text" id="gustosMusic" name="gustosMusic">
+                <br />
+                <label for="comidasPrefe">Comidas preferidas:</label>
+                <select name="comidasPrefe" id="comidasPrefe">
+                    <option value="Pastas">Pastas</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Comida vegana">Comida vegana</option>
+                    <option value="Comida rapida">Comida rapida</option>
+                </select>
+            </div>
+            <label for="remCheckbox" id="remCheckbox">Recordar datos</label>
+            <input type="checkbox" name="remCheckbox" id="remCheckbox">
+            <hr />
+            <input type="submit" value="Enviar">
+        </form>
+        </div>
+    </div>
 </body>
+
 </html>
